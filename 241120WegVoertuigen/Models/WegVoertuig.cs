@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-//Als je klaar bent met het aanmaken van de klassen maak je een hoofdprogramma aan. Hierin maak je op
+// Hierin maak je op
 //drie verschillende manieren een vrachtwagen en een bus aan. Print de gegevens van deze aangemaakte
 //voertuigen op een ordelijke manier af. 
 
@@ -18,7 +18,7 @@ namespace _241120WegVoertuigen.Models
         public int Banden { get; set; }
 
         
-        WegVoertuig()
+        public WegVoertuig()
         { }
 
         public WegVoertuig(string naam, int pk, int banden)
@@ -30,7 +30,7 @@ namespace _241120WegVoertuigen.Models
 
         public void Show()
         {
-            Console.WriteLine(Naam);       
+            Console.WriteLine($"Naam:{Naam}  Pk:{Pk}  Banden:{Banden}");    
         }
         
     }
